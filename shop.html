@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BML Shop - Machinery & Supplies</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html">
+        <img src="images/1.jpg" alt="BML Logo" class="brand-img">
+        <span>BML WOOD MACHINERY</span>
+      </a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <button id="cart-btn-2" class="cart-btn">Cart (<span id="cart-count-2">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Shop Our Products</h1>
+    <p class="muted">Explore our selection of woodworking machinery, tools, and construction hardware. Add items to your cart and we’ll help you get what you need for your next project.</p>
+
+    <div class="products-grid" id="products-grid">
+      <div class="product-card" data-id="p1" data-name="Portable Wood Planer" data-price="4500000">
+        <img src="images/1.jpg" alt="Portable Wood Planer">
+        <h3>Portable Wood Planer</h3>
+        <p class="price">UGX 4,500,000</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="p2" data-name="Circular Saw" data-price="2500000">
+        <img src="images/1.jpg" alt="Circular Saw">
+        <h3>Circular Saw</h3>
+        <p class="price">UGX 2,500,000</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="p3" data-name="Wood Moisture Meter" data-price="180000">
+        <img src="images/1.jpg" alt="Moisture Meter">
+        <h3>Wood Moisture Meter</h3>
+        <p class="price">UGX 180,000</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="p4" data-name="Timber Ripper Blade" data-price="120000">
+        <img src="images/1.jpg" alt="Ripper Blade">
+        <h3>Timber Ripper Blade</h3>
+        <p class="price">UGX 120,000</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <div id="cart-panel" class="cart-panel" aria-hidden="true">
+    <div class="cart-panel-inner">
+      <button id="close-cart" class="close-cart">&times;</button>
+      <h3>Your Cart</h3>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <div>Total: <strong id="cart-total">UGX 0</strong></div>
+        <div class="cart-actions">
+          <button id="checkout-btn" class="btn">Checkout</button>
+          <button id="clear-cart" class="btn secondary">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

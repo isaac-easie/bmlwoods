@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BML Wood Machinery - Quality Timber & Construction Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html">
+        <img src="images/1.jpg" alt="BML Logo" class="brand-img">
+        <span>BML WOOD MACHINERY</span>
+      </a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <button id="cart-btn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Trusted Partner for Timber & Construction Materials</h1>
+          <p>At BML Wood Machinery, we specialize in premium woodworking machines, timber processing, and construction hardware solutions tailored to your needs.</p>
+          <a class="btn" href="shop.html">Explore Our Shop</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h2>Our Core Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Timber Processing</h3>
+          <p>Efficient log splitting, ripping, and gauging with high precision for furniture and construction use.</p>
+        </div>
+        <div class="card">
+          <h3>Furniture Components</h3>
+          <p>Expert moulding and shaping of timber into quality parts such as table legs, bed frames, and more.</p>
+        </div>
+        <div class="card">
+          <h3>Joinery & Mortising</h3>
+          <p>Reliable joinery solutions including mortising and assembly for lasting strength.</p>
+        </div>
+        <div class="card">
+          <h3>Construction Hardware</h3>
+          <p>We supply essential hardware and building materials to support your projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Get in Touch</h2>
+      <p>📍 Address: Kamdini, Gulu Road, Opposite Emma Pro Collections</p>
+      <p>📞 Phone: +256 772 683 533</p>
+      <p>📧 Email: info@bmlwoods.com</p>
+      <form class="contact-form" onsubmit="return false;">
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" rows="4"></textarea></label>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 BML Wood Machinery. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#contact">Contact</a>
+        <a href="shop.html">Shop</a>
+        <a href="#services">Services</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div id="cart-panel" class="cart-panel" aria-hidden="true">
+    <div class="cart-panel-inner">
+      <button id="close-cart" class="close-cart">&times;</button>
+      <h3>Your Cart</h3>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <div>Total: <strong id="cart-total">UGX 0</strong></div>
+        <div class="cart-actions">
+          <button id="checkout-btn" class="btn">Checkout</button>
+          <button id="clear-cart" class="btn secondary">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
